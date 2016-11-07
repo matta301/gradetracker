@@ -23,7 +23,7 @@ $config = array(
         //"css" => $_SERVER['HTTP_REFERER'],
         "images" => array(
             "content" => $_SERVER["DOCUMENT_ROOT"] . "/images/content",
-            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/images/layout",
+            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/images/layout"
         ),
     ),
 );
@@ -36,6 +36,8 @@ if (!$connect) {
     echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
+}else {
+    echo "Connected successfully";
 }
 
 // =======================================================================
@@ -48,7 +50,7 @@ defined("TEMPLATES_PATH")
 or define("TEMPLATES_PATH", realpath(dirname(__FILE__) . '/templates'));
 
 defined("SCRIPT_ROOT")
-or define("SCRIPT_ROOT", "http://localhost:8080/gradetracker/resources/library");
+or define("SCRIPT_ROOT", "http://localhost:301/gradetracker.git/resources/library");
 // =======================================================================
 
 //  Error reporting.

@@ -1,4 +1,5 @@
 <?php
+	
 	$className = 'home-page';
 
 	// load config and header file
@@ -11,7 +12,7 @@
 
 
 
-
+Home
 
 
 
@@ -23,4 +24,4 @@
 	
 
 </section>
-<?php require_once(TEMPLATES_PATH . "/footer.php"); ?>
+<?php // require_once(TEMPLATES_PATH . "/footer.php"); ?>
